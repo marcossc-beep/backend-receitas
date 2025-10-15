@@ -7,13 +7,30 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome": "João do Star Wars",
+    "nome": "Marcos",
     "senha": "123",
-    "email": "marcos@gmail.com",
-    "telefone": "(48) 9 9999-9999"
+    "email": "marcos2@gmail.com",
+    "telefone": "(48) 9 9999-9991"
 }
 
 ###
+
+DELETE http://localhost:3000/usuarios/1
+
+###
+
+PUT http://localhost:3000/usuarios/2
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "senha": "12345",
+    "email": "marcos2@gmail.com",
+    "telefone": "(48) 9 9999-9991"
+}
+
+###  CATEGORIAS
+
 GET http://localhost:3000/categorias
 
 ###
@@ -22,5 +39,18 @@ POST http://localhost:3000/categorias
 Content-Type: application/json
 
 {
+    "nome": "SALGADO"
+}
+
+###
+
+PUT http://localhost:3000/categorias/1
+Content-Type: application/json
+
+{
     "nome": "DOCE"
 }
+
+###
+
+DELETE http://localhost:3000/categorias/1
