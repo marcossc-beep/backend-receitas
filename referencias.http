@@ -1,5 +1,5 @@
 ###
-GET http://localhost:3000/usuarios
+GET http://localhost:3000/usuarios?page=1&limit=5
 
 ###
 
@@ -7,9 +7,9 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "nome": "João 123456789101112131415",
+    "nome": "João",
     "senha": "123",
-    "email": "marcos123456789101112131415@gmail.com",
+    "email": "marcos@gmail.com",
     "telefone": "(48) 9 9999-9999"
 }
 
