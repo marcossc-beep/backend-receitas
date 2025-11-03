@@ -61,7 +61,7 @@ GET http://localhost:3000/receitas?page=2&limit=10
 
 ###
 
-GET http://localhost:3000/receitas?page=1&limit=10&sort=nome&order=asc
+GET http://10.3.118.18:3000/receitas?page=1&limit=10&sort=nome&order=asc
 
 ###
 

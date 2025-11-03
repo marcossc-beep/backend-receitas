@@ -1,5 +1,6 @@
 import Fastify from 'fastify';
 import pkg from 'pg';
+import cors from '@fastify/cors'
 
 const { Pool } = pkg;
 
@@ -12,6 +13,12 @@ const pool = new Pool({
 })
 
 const server = Fastify()
+
+await server.register(cors, {
+    origin: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+})
+
 
 server.get('/usuarios', async (req, reply) => {
     const page = parseInt(req.query.page) || 1;
