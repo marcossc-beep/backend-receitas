@@ -214,3 +214,25 @@ Content-Type: application/json
     "porcoes": 20,
     "tempo_preparo_minutos": 35
 }
+
+###
+GET http://localhost:3000/receitas/1
+
+###
+# ATUALIZAR UMA RECEITA
+PUT http://localhost:3000/receitas/1
+Content-Type: application/json
+
+{
+    "nome": "Bolo de Cenoura com Cobertura",
+    "modo_preparo": "corta cenoura, mistura com trigo, leva ao forno, joga cobertura",
+    "ingredientes": "cenoura, trigo, ovo e chocolate",
+    "usuario_id": 3,
+    "categoria_id": 3,
+    "porcoes": 15,
+    "tempo_preparo_minutos": 60
+}
+
+###
+# DELETAR UMA RECEITA
+DELETE http://localhost:3000/receitas/1
