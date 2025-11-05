@@ -22,7 +22,7 @@ POST http://localhost:3000/categorias
 Content-Type: application/json
 
 {
-    "nome": "DOCE"
+    "nome": "pão"
 }
 
 ###
@@ -61,7 +61,7 @@ GET http://localhost:3000/receitas
 
 ###
 
-GET http://10.3.118.18:3000/receitas?page=1&limit=10&sort=nome&order=asc
+GET http://10.3.118.18:3000/receitas?page=2&limit=2&sort=nome&order=asc
 
 ###
 
@@ -69,7 +69,7 @@ POST http://localhost:3000/receitas
 Content-Type: application/json
 
 {
-    "nome": "Bolo de Cenoura",
+    "nome": "Bolo de Cenoura4",
     "modo_preparo": "corta cenoura, mistura com trigo, leva ao forno",
     "ingredientes": "cenoura, trigo e ovo",
     "usuario_id": 1,
