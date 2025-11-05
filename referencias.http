@@ -57,7 +57,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/receitas?page=2&limit=10
+GET http://localhost:3000/receitas
 
 ###
 
@@ -72,8 +72,8 @@ Content-Type: application/json
     "nome": "Bolo de Cenoura",
     "modo_preparo": "corta cenoura, mistura com trigo, leva ao forno",
     "ingredientes": "cenoura, trigo e ovo",
-    "usuario_id": 3,
-    "categoria_id": 3,
+    "usuario_id": 1,
+    "categoria_id": 1,
     "porcoes": 12,
     "tempo_preparo_minutos": 45
 }
